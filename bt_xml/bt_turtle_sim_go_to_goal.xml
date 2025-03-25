@@ -1,0 +1,11 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+   <Sequence>
+        <Fallback>
+            <CheckIfOnGoal is_on_pose="{is_on_pose}" />
+            <CmdVelPose />
+        </Fallback>
+        <UpdatePose is_on_pose="{is_on_pose}" />
+    </Sequence>
+  </BehaviorTree>
+</root>

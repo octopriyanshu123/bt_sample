@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute = "MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence name="main_sequence">
+            <Condition name="check_condition">
+                <Action name="handle_true_action"/>
+                <Action name="handle_false_action"/>
+            </Condition>
+        </Sequence>
+    </BehaviorTree>
+</root>

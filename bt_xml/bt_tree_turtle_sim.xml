@@ -1,0 +1,38 @@
+<!-- <root BTCPP_format="4" >
+  <BehaviorTree ID="MainTree">
+    <Sequence name="main_sequence">
+    <CheckBattery random_value="{random_value}"/>
+      <ApproachObject random_value="{random_value}"/> 
+       <OpenGripper name="Object_2"/>
+      <CloseGripper name="Object_3"/> 
+       <GenerateRandomNumber random_value="{random_value}" />
+      <CheckOddOrEven random_value="{random_value}" is_even="{is_even}" />
+      <Fallback>
+        <Sequence>
+          <ConditionExpression condition="{is_even}" />
+          <HandleEvenNumber />
+        </Sequence>
+        <Sequence>
+          <Not condition="{is_even}" />
+          <HandleOddNumber />
+        </Sequence>
+      </Fallback>
+    </Sequence>
+  </BehaviorTree>
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <GenerateRandomNumber random_value="{random_value}" />
+      <CheckOddOrEven random_value="{random_value}" is_even="{is_even}" is_odd="{is_odd}"/>
+      <Fallback>
+        <CheckIfEven is_even="{is_even}"/>
+        <HandleEvenNumber random_value="{random_value}"/>
+      </Fallback>
+      <Fallback>
+        <CheckIfOdd is_odd="{is_odd}"/>
+        <HandleOddNumber random_value="{random_value}"/>
+      </Fallback>
+    </Sequence>
+  </BehaviorTree>
+</root>
+</root> -->
